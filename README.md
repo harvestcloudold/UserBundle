@@ -1,4 +1,7 @@
 UserBundle
 ==========
 
-A User entity for use with the Harvest Cloud
+This bundle is part of the [Harvest Cloud project][1]. It contains the
+User entity.
+
+[1]: http://github.com/harvestcloud/harvestcloud
