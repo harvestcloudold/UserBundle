@@ -1,9 +1,15 @@
 {% form_theme form theme %}
 
-<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
-    {{ form_widget(form) }}
-    <div class="buttons form row">
-        <input type="submit" class="submit button" name="_submit" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" />
-        <div class="clear"></div>
-    </div><!-- .buttons.form.row -->
-</form>
+<div class="two_equal_columns">
+    <div class="left column">
+        <h1>Register</h1>
+        <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+            {{ form_widget(form) }}
+            <div class="buttons form row">
+                <input type="submit" class="submit button" name="_submit" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" />
+                <div class="clear"></div>
+            </div><!-- .buttons.form.row -->
+        </form>
+    </div><!-- .left.column -->
+</div><!-- .two_equal_columns -->
+<div class="clear"></div>
