@@ -5,3 +5,8 @@ services:
 #    harvest_cloud_user.example:
 #        class: %harvest_cloud_user.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+    harvest_cloud_user.registration.form.type:
+        class: HarvestCloud\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: harvestcloud_user_registration }
