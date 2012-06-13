@@ -1,0 +1,11 @@
+# Registration
+registration:
+    header:  Register
+
+# Form field labels
+fos_user_registration_form_email:                "Email Address"
+fos_user_registration_form_plainPassword_first:  "Password"
+fos_user_registration_form_plainPassword_second: "Retype Password"
+fos_user_registration_form_firstname:            "First Name"
+fos_user_registration_form_lastname:             "Last Name"
+fos_user_registration_form_postal_code:          "Zip Code"
