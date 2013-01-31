@@ -224,6 +224,9 @@ class User extends BaseUser
             $profile->addLocation($location);
 
             $this->addProfile($profile);
+
+            // Create set of accounts
+            $profile->createSetOfAccounts();
         }
     }
 
