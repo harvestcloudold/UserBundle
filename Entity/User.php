@@ -218,9 +218,6 @@ class User extends BaseUser
             $location->setName('Default');
             $location->setPostalCode($this->postal_code);
 
-            $geocoder = new \HarvestCloud\GeoBundle\Util\GoogleGeocoder();
-            $geocoder->geocode($location);
-
             $profile->addLocation($location);
 
             $this->addProfile($profile);
