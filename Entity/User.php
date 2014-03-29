@@ -91,6 +91,19 @@ class User extends BaseUser
     }
 
     /**
+     * setPlainSalt()
+     *
+     * @author Tom Haskins-Vaughan <tom@harvestcloud.com>
+     * @since  2013-03-30
+     *
+     * @param  string  $salt
+     */
+    public function setPlainSalt($salt)
+    {
+        $this->salt = $salt;
+    }
+
+    /**
      * Set firstname
      *
      * @author Tom Haskins-Vaughan <tom@harvestcloud.com>
