@@ -2,7 +2,8 @@
     "name": "harvestcloud/user-bundle",
     "description": "Harvest Cloud User Bundle",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "friendsofsymfony/user-bundle": "~2.0@dev"
     },
     "autoload": {
         "psr-0": { "HarvestCloud\\UserBundle": "" }
